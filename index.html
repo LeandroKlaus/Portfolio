@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leandro Klaus</title>
+    <link rel="shortcut icon" href="public/lk.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="layout-container">
+        
+        <aside class="profile-sidebar">
+            <div class="profile-card">
+                <div class="profile-header-decoration">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="dashed-line">
+                        <path d="M -20,100 Q 100,20 220,100" fill="none" stroke="#00FFBF" stroke-width="2" stroke-dasharray="6,6" />
+                    </svg>
+                    <div class="profile-image-wrapper">
+                        <img src="public/perfil.png" alt="Leandro Klaus" class="profile-img">
+                    </div>
+                </div>
+                
+                <div class="profile-info">
+                    <h2 class="profile-name">Leandro Klaus</h2>
+                    <div class="flame-icon"><i class="fas fa-fire"></i></div>
+                    
+                    <p class="profile-bio">
+                        Um Engenheiro de Software obcecado em criar experiências intuitivas e soluções inovadoras.
+                    </p>
+
+                    <div class="social-links">
+                        <a href="https://wa.me/5592984615420?text=Ol%C3%A1%2C%20vi%20o%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20falar%20com%20voc%C3%AA." target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://github.com/LeandroKlaus" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/leklaussl/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/klausdev/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            
+            <nav class="top-nav">
+                <a href="#" class="nav-icon active" data-tooltip="Home"><i class="fas fa-home"></i></a>
+                <a href="#projects" class="nav-icon" data-tooltip="Projects"><i class="fas fa-folder"></i></a>
+                <a href="#experience" class="nav-icon" data-tooltip="Experience"><i class="fas fa-briefcase"></i></a>
+                <a href="#contact" class="nav-icon" data-tooltip="Message"><i class="fas fa-paper-plane"></i></a>
+            </nav>
+
+            <header class="hero-header">
+                <div class="title-wrapper">
+                    <h1 class="big-title">FRONT-END</h1>
+                    <h1 class="big-title outline">DEVELOPER</h1>
+                </div>
+                
+                <p class="hero-desc">
+                    Passionate about creating intuitive and engaging user experiences. Specialize in transforming ideas into beautifully crafted products.
+                </p>
+
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <span class="stat-num">+02</span>
+                        <span class="stat-label">YEARS OF<br>EXPERIENCE</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">+06</span>
+                        <span class="stat-label">PROJECTS<br>COMPLETED</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">+03</span>
+                        <span class="stat-label">SATISFIED<br>CLIENTS</span>
+                    </div>
+                </div>
+
+                <div class="highlight-cards">
+                    <div class="card-box certificate-card" id="btn-cert-modal">
+                        <div class="card-icon"><i class="fas fa-certificate"></i></div>
+                        <div class="card-text">
+                            <h3>FULL STACK JAVASCRIPT, NODEJS, NEXTJS, TYPESCRIPT, REACT, PRISMA, BANCO DE DADOS SQL, HTML5, CSS3</h3>
+                        </div>
+                        <div class="card-arrow"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+            </header>
+
+            <section id="projects" class="section-block">
+                <h2 class="section-title">RECENT<br><span class="dark-text">PROJECTS</span></h2>
+                
+                <div class="project-list">
+                    <div class="project-row">
+                        <div class="project-left">
+                            <div class="project-thumb" style="background-image: url('public/giro.png')"></div>
+                            <div class="project-info">
+                                <h3>Plataforma de Eventos</h3>
+                                <p>Apresentação</p>
+                            </div>
+                        </div>
+                        <a href="https://g360m.vercel.app/" target="_blank" class="arrow-link"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="project-row">
+                        <div class="project-left">
+                            <div class="project-thumb" style="background-image: url('public/gsadok.png')"></div>
+                            <div class="project-info">
+                                <h3>Catálogo Yamaha</h3>
+                                <p>Catálogo Virtual</p>
+                            </div>
+                        </div>
+                        <a href="https://gustavosadok.vercel.app/" target="_blank" class="arrow-link"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="project-row">
+                        <div class="project-left">
+                            <div class="project-thumb" style="background-image: url('public/yc.png')"></div>
+                            <div class="project-info">
+                                <h3>Consultoria de Imagem</h3>
+                                <p>Institucional</p>
+                            </div>
+                        </div>
+                        <a href="https://yourcolor.vercel.app/" target="_blank" class="arrow-link"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="project-row">
+                        <div class="project-left">
+                            <div class="project-thumb" style="background-image: url('public/ejourney.png')"></div>
+                            <div class="project-info">
+                                <h3>E-Journey</h3>
+                                <p>Teste de Inglês</p>
+                            </div>
+                        </div>
+                        <a href="https://ejourney.vercel.app/" target="_blank" class="arrow-link"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience" class="section-block">
+                <h2 class="section-title">02 YEARS OF<br><span class="dark-text">EXPERIENCE</span></h2>
+                
+                <div class="experience-list">
+                    <div class="exp-item">
+                        <div class="exp-content">
+                            <h3>Freelancer Front-End</h3>
+                            <p>Desenvolvimento de soluções web completas, melhorando a experiência do usuário e aumentando o engajamento.</p>
+                            <span class="exp-date">Jan 2024 - Presente</span>
+                        </div>
+                        <i class="fas fa-check exp-check"></i>
+                    </div>
+
+                    <div class="exp-item">
+                        <div class="exp-content">
+                            <h3>Engenharia da Computação</h3>
+                            <p>Formação acadêmica focada em algoritmos, estrutura de dados e desenvolvimento de software.</p>
+                            <span class="exp-date">2023 - 2026</span>
+                        </div>
+                        <i class="fas fa-check exp-check"></i>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-block">
+                <h2 class="section-title">PREMIUM<br><span class="dark-text">TOOLS</span></h2>
+                <div class="tools-grid">
+                    <div class="tool-item">
+                        <div class="tool-icon"><img src="public/nodejs.svg" alt="Node.js"></div>
+                        <div class="tool-info">
+                            <h4>Node.js</h4>
+                            <span>Runtime</span>
+                        </div>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-icon"><i class="devicon-postgresql-plain colored"></i></div>
+                        <div class="tool-info">
+                            <h4>PostgreSQL</h4>
+                            <span>Database</span>
+                        </div>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-icon"><img src="public/nextjs.svg" alt="Next.js"></div>
+                        <div class="tool-info">
+                            <h4>Next.js</h4>
+                            <span>Framework</span>
+                        </div>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-icon"><img src="public/typescript.svg" alt="TypeScript"></div>
+                        <div class="tool-info">
+                            <h4>TypeScript</h4>
+                            <span>Language</span>
+                        </div>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-icon"><img src="public/javascript.svg" alt="JavaScript"></div>
+                        <div class="tool-info">
+                            <h4>JavaScript</h4>
+                            <span>Language</span>
+                        </div>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-icon"><img src="public/python.svg" alt="Python"></div>
+                        <div class="tool-info">
+                            <h4>Python</h4>
+                            <span>Language</span>
+                        </div>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-icon"><img src="public/php.png" alt="PHP"></div>
+                        <div class="tool-info">
+                            <h4>PHP</h4>
+                            <span>Language</span>
+                        </div>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-icon"><i class="devicon-git-plain colored"></i></div>
+                        <div class="tool-info">
+                            <h4>Git</h4>
+                            <span>Version Control</span>
+                        </div>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-icon"><img src="public/vite.png" alt="Vite"></div>
+                        <div class="tool-info">
+                            <h4>Vite</h4>
+                            <span>Build Tool</span>
+                        </div>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-icon"><i class="devicon-prisma-original"></i></div>
+                        <div class="tool-info">
+                            <h4>Prisma</h4>
+                            <span>ORM</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section-block">
+                <h2 class="section-title">LET'S WORK<br><span class="dark-text">TOGETHER</span></h2>
+                
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label>Topic</label>
+                            <input type="text" name="topic" placeholder="Your Topic" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="Your@email.com" required>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Message</label>
+                        <textarea name="message" placeholder="Message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </section>
+
+            <footer>
+                <div class="footer-btn-container">
+                    <button id="btn-whatsapp" class="footer-btn mint">Contact Me</button>
+                    <button id="btn-cv" class="footer-btn blue">Download CV</button>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <div id="modal-certificates" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 class="modal-title">Meus Certificados</h2>
+            <div class="certificates-list" id="certificates-container">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
