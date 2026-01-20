@@ -29,7 +29,7 @@ if(contactForm) {
         const btn = contactForm.querySelector('.submit-btn');
         const originalText = btn.textContent;
         
-        const mailtoLink = `mailto:seu_email@dominio.com?subject=${encodeURIComponent(topic)}&body=${encodeURIComponent(message)}`;
+        const mailtoLink = `mailto:leklaussl@gmail.com?subject=${encodeURIComponent(topic)}&body=${encodeURIComponent(message)}`;
         
         window.location.href = mailtoLink;
         
