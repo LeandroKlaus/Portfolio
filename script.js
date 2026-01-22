@@ -71,6 +71,30 @@ const certificates = [
     "TypeScript.pdf"
 ];
 
+const certTranslations = {
+    "Aplicações Web com NodeJs.pdf": "Web Applications with NodeJs",
+    "Banco de Dados SQL.pdf": "SQL Databases",
+    "Bootstrap e Sass.pdf": "Bootstrap and Sass",
+    "CSS 3.pdf": "CSS 3",
+    "CSS Moderno.pdf": "Modern CSS",
+    "Formação Full Stack JavaScript.pdf": "Full Stack JavaScript Bootcamp",
+    "Fundamentos do React.pdf": "React Fundamentals",
+    "Git e GitHub.pdf": "Git and GitHub",
+    "HTML 5.pdf": "HTML 5",
+    "Introdução ao NodeJS.pdf": "Introduction to NodeJS",
+    "JavaScript I - Fundamentos.pdf": "JavaScript I - Fundamentals",
+    "JavaScript III - DOM.pdf": "JavaScript III - DOM",
+    "JavaScript IV - Recursos Modernos.pdf": "JavaScript IV - Modern Features",
+    "JavaScript V - POO.pdf": "JavaScript V - OOP",
+    "JavaScript VI - Tópicos Avançados.pdf": "JavaScript VI - Advanced Topics",
+    "Next.js.pdf": "Next.js",
+    "Oracle.pdf": "Oracle Cloud Infrastructure",
+    "React + TypeScript na Prática Projeto React Kanban.pdf": "React + TypeScript Practice: Kanban Project",
+    "SQL no Node.js e Prisma ORM.pdf": "SQL in Node.js and Prisma ORM",
+    "Setup.pdf": "Setup & Environment",
+    "TypeScript.pdf": "TypeScript"
+};
+
 function renderCertificates() {
     if(!certificatesContainer) return;
     certificatesContainer.innerHTML = '';
@@ -80,8 +104,11 @@ function renderCertificates() {
         link.href = `certificados/${cert}`;
         link.target = "_blank";
         link.className = "cert-item";
+        
+        const displayName = certTranslations[cert] || cert.replace('.pdf', '');
+
         link.innerHTML = `
-            <span>${cert.replace('.pdf', '')}</span>
+            <span>${displayName}</span>
             <i class="fas fa-external-link-alt"></i>
         `;
         certificatesContainer.appendChild(link);
@@ -121,7 +148,7 @@ const btnWhatsapp = document.getElementById('btn-whatsapp');
 if(btnWhatsapp) {
     btnWhatsapp.addEventListener('click', () => {
         const phone = '5592984615420';
-        const text = encodeURIComponent('Olá, vi o seu portfólio e gostaria de falar com você.');
+        const text = encodeURIComponent('Hello, I saw your portfolio and would like to speak with you.');
         window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
     });
 }
