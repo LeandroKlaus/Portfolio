@@ -101,7 +101,7 @@ function renderCertificates() {
     
     certificates.forEach(cert => {
         const link = document.createElement('a');
-        link.href = `Portfolio/certificados/${cert}`;
+        link.href = `certificados/${cert}`;
         link.target = "_blank";
         link.className = "cert-item";
         
@@ -157,7 +157,7 @@ const btnCv = document.getElementById('btn-cv');
 if(btnCv) {
     btnCv.addEventListener('click', () => {
         const link = document.createElement('a');
-        link.href = 'Portfolio/Currículo - Leandro Klaus Santos Lima.pdf';
+        link.href = 'Currículo - Leandro Klaus Santos Lima.pdf';
         link.download = 'Currículo - Leandro Klaus Santos Lima.pdf';
         document.body.appendChild(link);
         link.click();
